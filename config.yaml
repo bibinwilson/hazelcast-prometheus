@@ -1,7 +1,7 @@
 ---
 # startDelaySeconds: 0
 # hostPort: 0.0.0.0:5000
-jmxUrl: service:jmx:rmi:///jndi/rmi://0.0.0.0:5000/metrics
+# jmxUrl: service:jmx:rmi:///jndi/rmi://0.0.0.0:5000/metrics
 # ssl: false
 # lowercaseOutputName: false
 # lowercaseOutputLabelNames: false
