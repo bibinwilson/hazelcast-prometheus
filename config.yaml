@@ -1,8 +1,8 @@
 ---
-startDelaySeconds: 0
-hostPort: 0.0.0.0:5000
-jmxUrl: service:jmx:rmi:///jndi/rmi://0.0.0.0:5000/jmxrmi
-ssl: false
+# startDelaySeconds: 0
+# hostPort: 0.0.0.0:5000
+# jmxUrl: service:jmx:rmi:///jndi/rmi://0.0.0.0:5000/jmxrmi
+# ssl: false
 lowercaseOutputName: false
 lowercaseOutputLabelNames: false
 whitelistObjectNames: ["com.hazelcast.internal.metrics:*"]
