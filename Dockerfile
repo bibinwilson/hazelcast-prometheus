@@ -51,7 +51,7 @@ RUN chmod a+rw /$HZ_HOME/*
 
 # Prometheus Exporter Setup
 
-ADD https://repo1.maven.org/maven2/io/prometheus/jmx/jmx_prometheus_javaagent/0.10/jmx_prometheus_javaagent-0.10.jar /opt
+ADD jmx_prometheus_javaagent.jar /opt
 ADD config.yaml /opt
 # User default when running
 USER default
