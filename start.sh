@@ -3,7 +3,7 @@
 PRG="$0"
 PRGDIR=`dirname "$PRG"`
 HAZELCAST_HOME=`cd "$PRGDIR/.." >/dev/null; pwd`/hazelcast
-JAVA_OPTS="-javaagent:/opt/jmx_prometheus_javaagent.jar=5000:/opt/config.xml"
+JAVA_OPTS="-javaagent:/opt/jmx_prometheus_javaagent.jar=5000:/opt/config.yaml"
 
 if [ "x$MIN_HEAP_SIZE" != "x" ]; then
 	JAVA_OPTS="$JAVA_OPTS -Xms${MIN_HEAP_SIZE}"
