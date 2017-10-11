@@ -1,18 +1,18 @@
 ---
 # startDelaySeconds: 0
 # hostPort: 0.0.0.0:5000
-# jmxUrl: service:jmx:rmi:///jndi/rmi://0.0.0.0:5000/jmxrmi
+jmxUrl: service:jmx:rmi:///jndi/rmi://0.0.0.0:5000/metrics
 # ssl: false
-lowercaseOutputName: false
-lowercaseOutputLabelNames: false
-whitelistObjectNames: ["com.hazelcast.internal.metrics:*"]
-blacklistObjectNames: ["org.apache.cassandra.metrics:type=ColumnFamily,*"]
-rules:
-  - pattern: 'com.hazelcast.internal.metrics<type=(\w+), name=(\w+)><>Value: (\d+)'
-    name: hezelcast_$1_$2
-    value: $3
-    valueFactor: 0.001
-    labels: {}
-    help: "Hezelcast metric $1 $2"
-    type: GAUGE
-    attrNameSnakeCase: false
+# lowercaseOutputName: false
+# lowercaseOutputLabelNames: false
+# whitelistObjectNames: ["com.hazelcast.internal.metrics:*"]
+# blacklistObjectNames: ["org.apache.cassandra.metrics:type=ColumnFamily,*"]
+# rules:
+#   - pattern: 'com.hazelcast.internal.metrics<type=(\w+), name=(\w+)><>Value: (\d+)'
+#     name: hezelcast_$1_$2
+#     value: $3
+#     valueFactor: 0.001
+#     labels: {}
+#     help: "Hezelcast metric $1 $2"
+#     type: GAUGE
+#     attrNameSnakeCase: false

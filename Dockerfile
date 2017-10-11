@@ -58,6 +58,7 @@ USER default
 
 # Expose port
 EXPOSE 5701
+EXPOSE 5000
 
 # Start hazelcast standalone server.
 CMD ./start.sh

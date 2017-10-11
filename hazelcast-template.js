@@ -35,7 +35,7 @@
 				},
 				"spec": {
 					"containers": [{
-						"image": "hazelcast/hazelcast-openshift-origin:${HAZELCAST_VERSION}",
+						"image": "bibinwilson/hazelcast-prometheus:${HAZELCAST_VERSION}",
 						"name": "hazelcast-openshift",
 						"env": [{
 							"name": "HAZELCAST_KUBERNETES_SERVICE_DNS",
@@ -52,6 +52,10 @@
 						}],
 						"ports": [{
 							"containerPort": 5701,
+							"protocol": "TCP"
+						}],
+						"ports": [{
+							"containerPort": 5000,
 							"protocol": "TCP"
 						}]
 					}]
@@ -75,6 +79,10 @@
 			},
 			"ports": [{
 				"port": 5701,
+				"protocol": "TCP"
+			}],
+			"ports": [{
+				"port": 5000,
 				"protocol": "TCP"
 			}]
 		}
